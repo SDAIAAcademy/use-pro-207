@@ -5,7 +5,7 @@ AI for Project, Procurement and Operations Work
 
 مسار الطلاقة في البيانات والذكاء الاصطناعي · أكاديمية سدايا · USE-PRO-207 · المستوى 200
 
-REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك فعله بعد المقرر
+تعيد حساب الخطة والحالة والدرجات قبل أن تصدّق صياغتها، وتتتبّع كل إجراء إلى موضعه في تفريغ الاجتماع، وتقيس ما تغيّر في مهمة من عملك
 
 يستخدم المشاركون الذكاء الاصطناعي في وثائق المشروعات والمشتريات لمشروع اصطناعي واحد لتطوير المرافق: ميثاق المشروع وتسجيلات الاجتماعات وسجل المخاطر وثلاثة عروض من الموردين. ويعيدون التحقق من خطة صاغها الذكاء الاصطناعي، ويتتبعون إجراءات الاجتماعات إلى نصها المفرغ، ويحسبون حالة المشروع من بيانات المهام، ويحتسبون درجات العروض وفق أوزان محددة مسبقًا. أما شراء أنظمة الذكاء الاصطناعي فيغطيه المقرر LDS-EXE-205.
 
@@ -29,8 +29,9 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | الوحدة | العنوان | الجلسات | الشرائح |
 |---|---|---|---|
-| اليوم 1 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2 | [`slides/day1.html`](slides/day1.html) |
-| اليوم 2 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2 | [`slides/day2.html`](slides/day2.html) |
+| اليوم 1 | الخطة والحالة: أعد الحساب قبل أن تصدّق الصياغة | أين يخطئ المساعد في وثائق المشروع; الخطة والحالة والمخاطر | [`slides/day1.html`](slides/day1.html) |
+| اليوم 2 | الاجتماعات والعروض: تتبّع إلى المصدر واحسب بالصيغة | من الاجتماع إلى سجل الإجراءات; تقييم العروض وقياس إعادة التصميم | [`slides/day2.html`](slides/day2.html) |
+| المشروع الختامي | بطاقة إعادة التصميم والمراجعة المباشرة |  | [`slides/capstone.html`](slides/capstone.html) |
 <!-- /academy:units -->
 
 ## دراسة الحالة
@@ -44,10 +45,10 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | | الجلسة | المختبر | الملف |
 |---|---|---|---|
-| 1.1 | اليوم 1 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 1.1 | [`D1_1.html`](labs/D1_1.html) |
-| 1.2 | اليوم 1 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 1.2 | [`D1_2.html`](labs/D1_2.html) |
-| 2.1 | اليوم 2 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 2.1 | [`D2_1.html`](labs/D2_1.html) |
-| 2.2 | اليوم 2 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 2.2 | [`D2_2.html`](labs/D2_2.html) |
+| 1.1 | اليوم 1 · الجلسة 1 | سجل أخطاء في خمسة مخرجات | [`D1_1_error_log.html`](labs/D1_1_error_log.html) |
+| 1.2 | اليوم 1 · الجلسة 2 | إعادة حساب المسار الحرج | [`D1_2_critical_path.html`](labs/D1_2_critical_path.html) |
+| 2.1 | اليوم 2 · الجلسة 1 | سجل إجراءات من ثلاثة اجتماعات | [`D2_1_action_register.html`](labs/D2_1_action_register.html) |
+| 2.2 | اليوم 2 · الجلسة 2 | تقييم ثلاثة عروض | [`D2_2_score_proposals.html`](labs/D2_2_score_proposals.html) |
 <!-- /academy:labs -->
 
 ## المتطلبات السابقة
@@ -68,7 +69,26 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 <!-- academy:sources -->
 ## المصادر
 
-- REPLACE: كل مصدر يستشهد به المقرر مع عنوانه، في course.json ضمن "sources"؛ هذه القائمة تُكتب من هناك
+### المرجعيات الوطنية
+
+- [نظام المنافسات والمشتريات الحكومية (جريدة أم القرى، نُشر في 22 ربيع الأول 1448هـ، ويُعمل به بعد 120 يومًا من نشره)](https://www.uqn.gov.sa/decisions-and-regulations/4001762)
+- [نظام المنافسات والمشتريات الحكومية الصادر بالمرسوم الملكي م/128 (هيئة الخبراء بمجلس الوزراء؛ يحل محله النظام الجديد عند نفاذه)](https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/24c563f9-7292-49c8-b0fb-aa9800b999f1/1)
+- [مكتب إدارة البيانات الوطنية: سياسة تصنيف البيانات](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf)
+- [سدايا: مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية](https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf)
+
+### أدلة على أخطاء المساعدات والتفريغ وعلى أثر المخرج المصقول
+
+- [BetterUp Labs and Stanford Social Media Lab: The hidden costs of workslop (2025)](https://www.betterup.com/blog/hidden-costs-workslop)
+- [Dell'Acqua et al.: Navigating the Jagged Technological Frontier (Harvard Business School working paper 24-013)](https://www.hbs.edu/faculty/Pages/item.aspx?num=64700)
+- [Koenecke et al.: Careless Whisper: Speech-to-Text Hallucination Harms (2024)](https://arxiv.org/abs/2402.08021)
+- [Dziri et al.: Faith and Fate: Limits of Transformers on Compositionality (NeurIPS 2023)](https://arxiv.org/abs/2305.18654)
+
+### الأدوات
+
+- [LibreOffice Help: WORKDAY.INTL](https://help.libreoffice.org/latest/en-US/text/scalc/01/func_workday.intl.html)
+- [OpenAI Whisper (المستودع)](https://github.com/openai/whisper)
+- [ProjectLibre](https://www.projectlibre.com/)
+- [OpenProject: Gantt charts](https://www.openproject.org/docs/user-guide/gantt-chart/)
 <!-- /academy:sources -->
 
 ### المرجعيات الوطنية
