@@ -258,10 +258,21 @@ def lab_2_2() -> None:
     expect("the estimate appears in the assistant's note", "التكلفة التقديرية البالغة" in note, True)
 
 
+def classification() -> None:
+    blank = rows(FILES / "classification_sheet.csv")
+    done = rows(HERE / "classification_sheet.csv")
+    expect("the classification sheet and its solution list the same files", [r[0] for r in blank] == [r[0] for r in done], True)
+    expect("every listed file is in the pack", all(list(FILES.glob(r[0])) for r in blank if not r[0].startswith("(")), True)
+    expect("the participant's sheet starts empty", all(r[2] == "" and r[3] == "" for r in blank), True)
+    expect("the solution gives a level and tools for every file", all(r[2] and r[3] for r in done), True)
+
+
 LABS = {"1.1": lab_1_1, "1.2": lab_1_2, "2.1": lab_2_1, "2.2": lab_2_2}
 
 if __name__ == "__main__":
     for lab in sys.argv[1:] or list(LABS):
         print(f"--- lab {lab}")
         LABS[lab]()
+        if lab != "1.1":
+            classification()
         print(f"PASS  lab {lab}")
