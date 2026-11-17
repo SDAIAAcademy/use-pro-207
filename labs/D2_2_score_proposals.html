@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.2 · تقييم ثلاثة عروض · الذكاء الاصطناعي في أعمال المشروعات والمشتريات والعمليات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_2_score_proposals.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-2">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.2</span>
+<h1>تقييم ثلاثة عروض</h1>
+<p>تبدأ من قيم استخرجها المساعد من ثلاثة عروض، وتتحقق من كل قيمة في صفحتها وتصححها، وتصدر حكم الخبرة وتوثقه، وتحسب الدرجات الموزونة بصيغ في جدول البيانات، وتخرج بمصفوفة فيها إحالات إلى الصفحات وتوصية يتغير بها ترتيب المساعد.</p>
+<div class="meta"><span>50 دقيقة</span><span>اليوم 2</span><span>الجلسة 2: تقييم العروض وقياس إعادة التصميم</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.2">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>مصفوفة تقييم لثلاثة عروض: لكل قيمة صفحتها في العرض، ولكل معيار درجته ودرجته الموزونة بصيغة.</li>
+    <li>حكم بشري موثق في معيار الخبرة: من حكم ولماذا.</li>
+    <li>سطر توصية يذكر الترتيب وما تغيّر عن مذكرة المساعد وما يُرفع إلى مسؤولة المشتريات.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/start/extracted_values.csv" download><b>start/extracted_values.csv</b><span>نقطة البداية: القيم التي استخرجها المساعد من العروض، مع رقم الصفحة.</span></a>
+  <a href="files/proposals/matrix_template.csv" download><b>proposals/matrix_template.csv</b><span>مصفوفة التقييم الفارغة.</span></a>
+  <a href="files/proposals/proposal_A_naseem.txt" target="_blank"><b>proposals/proposal_A_naseem.txt</b><span>العرض A، ست صفحات، بالعربية.</span></a>
+  <a href="files/proposals/proposal_B_zamhareer.txt" target="_blank"><b>proposals/proposal_B_zamhareer.txt</b><span>العرض B، ست صفحات، بالعربية.</span></a>
+  <a href="files/proposals/proposal_C_polarline.txt" target="_blank"><b>proposals/proposal_C_polarline.txt</b><span>العرض C، ست صفحات، بالإنجليزية.</span></a>
+  <a href="files/proposals/criteria.csv" download><b>proposals/criteria.csv</b><span>المعايير الخمسة وأوزانها.</span></a>
+  <a href="files/proposals/scoring_rules.txt" target="_blank"><b>proposals/scoring_rules.txt</b><span>قواعد احتساب الدرجات، اعتُمدت قبل فتح العروض.</span></a>
+  <a href="files/proposals/requirements.txt" target="_blank"><b>proposals/requirements.txt</b><span>المتطلبات الفنية الثمانية.</span></a>
+  <a href="files/proposals/declarations.txt" target="_blank"><b>proposals/declarations.txt</b><span>إقرارات تعارض المصالح لأعضاء اللجنة.</span></a>
+  <a href="files/start/evaluation_ai_note.txt" target="_blank"><b>start/evaluation_ai_note.txt</b><span>مذكرة التقييم كما صاغها المساعد. اقرأها بعد أن تبني مصفوفتك.</span></a>
+  <a href="files/classification_guide.txt" target="_blank"><b>classification_guide.txt</b><span>دليل التصنيف.</span></a>
+  <a href="files/classification_sheet.csv" target="_blank"><b>classification_sheet.csv</b><span>ورقة التصنيف: تملأ فيها صفوف هذا المختبر.</span></a>
+  <a href="files/tools_register.txt" target="_blank"><b>tools_register.txt</b><span>سجل الأدوات المصرح بها.</span></a>
+</div>
+<p class="small">سياسة الذكاء الاصطناعي: <b>المساعد كاملًا</b> في الاستخراج والصياغة. الدرجات تحسبها صيغ في جدول البيانات، وكل قيمة تُتتبَّع إلى صفحتها. كل الملفات اصطناعية.</p>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · صنّف وثائق المنافسة واقرأ الإقرارات وقواعد الاحتساب <span class="min">6 دقائق</span></h3>
+  <p>صنّف العروض والمعايير والتكلفة التقديرية بدليل التصنيف: أيها يدخل المساعد المعتمد، وأيها لا يدخل أي أداة ذكاء اصطناعي؟ ثم اقرأ الإقرارات: من يقيّم ومن تنحّى؟ ثم القواعد: متى اعتُمدت، وما الذي تقوله عن الضريبة والضمان الجزئي ومدة التوريد؟</p>
+</div>
+
+<div class="step">
+  <h3>2 · تحقق من القيم المستخرجة في صفحاتها وصحّحها <span class="min">16 دقيقة</span></h3>
+  <p>لكل قيمة في <code>extracted_values.csv</code> للمعايير من C1 إلى C4: افتح الصفحة المذكورة، واقرأ الجملة كاملة وما حولها، ثم اقرأ الصفحة التي بعدها. اكتب القيمة بعد التحقق وصفحتها الصحيحة في المصفوفة. اثنتا عشرة قيمة، نحو دقيقة لكل واحدة.</p>
+  <div class="callout warn"><b>ثلاثة أسئلة لكل قيمة:</b> هل هي بالوحدة التي تطلبها القاعدة؟ هل لها شرط في جملة أخرى أو صفحة أخرى؟ هل تخص المعدات كلها أم جزءًا منها؟</div>
+  <p class="small">إن أردت أن تعيد الاستخراج بالمساعد فاطلب منه الجملة حرفيًّا ورقم الصفحة لكل قيمة، ثم افتح الصفحة بنفسك.</p>
+</div>
+
+<div class="step">
+  <h3>3 · أصدر حكم الخبرة واكتب صاحبه وسببه <span class="min">8 دقائق</span></h3>
+  <p>أنت وزميلك عضوا اللجنة في المعيار C5. اقرآ الصفحة 2 من كل عرض، وطبّقا سلّم الحكم في قواعد الاحتساب، واكتبا في عمود «حكم بشري؟ من ولماذا» اسميكما وسبب كل درجة. تجاهلا الدرجات التي قدّرها المساعد لهذا المعيار.</p>
+</div>
+
+<div class="step">
+  <h3>4 · احسب الدرجات الموزونة بالصيغ <span class="min">12 دقيقة</span></h3>
+  <p>لكل معيار صيغة من قواعد الاحتساب. اكتبها مرة واسحبها على العروض الثلاثة. ثم اجمع الدرجات الموزونة لكل عرض.</p>
+  <pre class="code"><code>C1 = MIN(prices) / price * 100
+C2 = met / 8 * 100
+C3 = MIN(days) / days * 100
+C4 = MIN(100; years / 5 * 100)
+C5 = judgement / 5 * 100
+total = SUMPRODUCT(weights; scores) / 100</code></pre>
+  <p class="small">ضع مكان كل اسم خلاياه في جدولك. بعد الحساب غيّر قيمة واحدة وتأكد أن المجموع يتغير: هكذا تعرف أن الأرقام محسوبة لا مكتوبة.</p>
+</div>
+
+<div class="step">
+  <h3>5 · قارن مع مذكرة المساعد واكتب سطر التوصية <span class="min">8 دقائق</span></h3>
+  <p>افتح <code>evaluation_ai_note.txt</code> الآن. أدخل قيم المساعد في صيغك: هل تخرج المجاميع التي كتبها؟ ثم اقرأ المذكرة سطرًا سطرًا على الإقرارات ودليل التصنيف. اكتب سطر التوصية: الترتيب بمجاميعه، وما تغيّر عن المذكرة ولماذا، وما يُرفع إلى مسؤولة المشتريات. التوصية للجنة، والترسية لصاحب الصلاحية.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ مهمة إضافية</h3>
+  <p>حرّك حكم الخبرة لكل عرض درجة واحدة صعودًا ثم نزولًا، واحدًا في كل مرة. هل يتغير الفائز؟ هل يتغير الترتيب بعده؟ اكتب في جملة ماذا يعني ذلك لتوثيق الحكم.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>ما سعر العرض A بعد التحقق، ولماذا يختلف عمّا استخرجه المساعد؟</li>
+  <li>ما ترتيب العروض الثلاثة بمجاميعها الموزونة، ومن كان الأول في مذكرة المساعد؟</li>
+  <li>ما الأمران في مذكرة المساعد اللذان لا علاقة لهما بالحساب ويُرفعان إلى مسؤولة المشتريات؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>الحل: <code>labs/solutions/D2_2_score_proposals.md</code> والمصفوفة المرجعية <code>labs/solutions/matrix.csv</code>. التحقق: <code>uv run labs/solutions/check.py 2.2</code>.</li>
+    <li>القيم بعد التحقق: سعر A هو 4,542,500 ريال بعد الضريبة؛ ضمان A الشامل سنتان (الخمس للضواغط)؛ توريد B في 45 يوم عمل (30 بعد 15 للمخططات)؛ توريد C في 40 يوم عمل إلى الموقع؛ مطابقة C ستة من ثمانية (الضجيج 78 ديسيبل، والتدريب يومان في الموقع).</li>
+    <li>المجاميع: C بمجموع 90.00، ثم B بمجموع 84.91، ثم A بمجموع 83.68. من قيم المساعد: A بمجموع 96.88، ثم C بمجموع 95.80، ثم B بمجموع 87.83. الأول عند المساعد صار الأخير.</li>
+    <li>المجاميع المكتوبة في المذكرة (94.0 و93.5 و91.0) لا تخرج حتى من قيم المساعد نفسه: كُتبت ولم تُحسب.</li>
+    <li>الحكم المرجعي في C5: A ثلاثة (خطابان مرجعيان فقط)، وB أربعة (وكيل خدمة لا مركز)، وC خمسة. الفائز لا يتغير إذا تحرك حكم واحد درجة واحدة، والترتيب بين الثاني والثالث يتغير: لذلك يُكتب الحكم وصاحبه وسببه.</li>
+    <li>ما يُرفع: المذكرة تسمّي فاضل الرومي مقيّمًا وهو متنحٍّ بإقراره، وتذكر مبلغ التكلفة التقديرية، وهي وثيقة مستواها «سري» لا تدخل أي أداة ذكاء اصطناعي.</li>
+    <li>العروض مستواها «مقيّد»: المساعد المعتمد وحده. في القاعة يؤدي مساعد المدرّب دوره لأن الملفات اصطناعية.</li>
+    <li>القيم المستخرجة والمذكرة كتبهما مساعد بديل مكتوب باليد. لم يُشغَّل نموذج حقيقي في بناء المقرر.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D2_1_action_register.html" rel="prev">→ المختبر السابق</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار الطلاقة في البيانات والذكاء الاصطناعي · الذكاء الاصطناعي في أعمال المشروعات والمشتريات والعمليات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع 4c7343d</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T19:44:21Z","version":"2027.1.0","commit":"4c7343d"},"course":{"id":"use-pro-207","code":"USE-PRO-207","title":"الذكاء الاصطناعي في أعمال المشروعات والمشتريات والعمليات","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-pro-207/","repo":"SDAIAAcademy/use-pro-207","home":"../index.html"},"lab":{"id":"2.2","title":"تقييم ثلاثة عروض","summary":"تبدأ من قيم استخرجها المساعد من ثلاثة عروض، وتتحقق من كل قيمة في صفحتها وتصححها، وتصدر حكم الخبرة وتوثقه، وتحسب الدرجات الموزونة بصيغ في جدول البيانات، وتخرج بمصفوفة فيها إحالات إلى الصفحات وتوصية يتغير بها ترتيب المساعد.","minutes":50,"day":2,"unit":"اليوم 2","session":2,"deck":"../slides/day2.html#lab-2-2","prev":"D2_1_action_register.html","next":null,"alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+# الذكاء الاصطناعي في أعمال المشروعات والمشتريات والعمليات
+
+> تعيد حساب الخطة والحالة والدرجات قبل أن تصدّق صياغتها، وتتتبّع كل إجراء إلى موضعه في تفريغ الاجتماع، وتقيس ما تغيّر في مهمة من عملك. مقرر من أكاديمية سدايا، الرمز USE-PRO-207، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/use-pro-207/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/use-pro-207/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/use-pro-207/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 15,868 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/use-pro-207/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: الخطة والحالة: أعد الحساب قبل أن تصدّق الصياغة](https://sdaiaacademy.github.io/use-pro-207/slides/day1.md): أين يخطئ المساعد في وثائق المشروع، وسجل الأخطاء، والمسار الحرج على تقويم المركز، والحالة المحسوبة بقواعد مكتوبة؛ الجلسات: أين يخطئ المساعد في وثائق المشروع، الخطة والحالة والمخاطر؛ الصفحة: https://sdaiaacademy.github.io/use-pro-207/slides/day1.html؛ نحو 6,891 من الوحدات النصية
+- [اليوم 2: الاجتماعات والعروض: تتبّع إلى المصدر واحسب بالصيغة](https://sdaiaacademy.github.io/use-pro-207/slides/day2.md): من تسجيل الاجتماع إلى سجل إجراءات له مالكون ومواضع في التفريغ، ومن عروض الموردين إلى مصفوفة تحسبها الصيغ، ثم مقارنة تنفيذين لمهمتك؛ الجلسات: من الاجتماع إلى سجل الإجراءات، تقييم العروض وقياس إعادة التصميم؛ الصفحة: https://sdaiaacademy.github.io/use-pro-207/slides/day2.html؛ نحو 6,375 من الوحدات النصية
+- [المشروع الختامي: بطاقة إعادة التصميم والمراجعة المباشرة](https://sdaiaacademy.github.io/use-pro-207/slides/capstone.md): مهمة متكررة من عملك تُنفَّذ مرتين على مواد اصطناعية وتُقاس على خط أساسها، وفحص دون ذكاء اصطناعي، ثم مراجعة تتتبّع فيها إجراءً ودرجة إلى مصدريهما؛ الصفحة: https://sdaiaacademy.github.io/use-pro-207/slides/capstone.html؛ نحو 1,880 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: سجل أخطاء في خمسة مخرجات](https://sdaiaacademy.github.io/use-pro-207/labs/D1_1_error_log.md): اليوم 1، الجلسة 1، 50 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-207/labs/D1_1_error_log.html
+- [المختبر 1.2: إعادة حساب المسار الحرج](https://sdaiaacademy.github.io/use-pro-207/labs/D1_2_critical_path.md): اليوم 1، الجلسة 2، 50 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-207/labs/D1_2_critical_path.html
+- [المختبر 2.1: سجل إجراءات من ثلاثة اجتماعات](https://sdaiaacademy.github.io/use-pro-207/labs/D2_1_action_register.md): اليوم 2، الجلسة 1، 50 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-207/labs/D2_1_action_register.html
+- [المختبر 2.2: تقييم ثلاثة عروض](https://sdaiaacademy.github.io/use-pro-207/labs/D2_2_score_proposals.md): اليوم 2، الجلسة 2، 50 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-pro-207/labs/D2_2_score_proposals.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/use-pro-207/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 15,868 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/use-pro-207/context/day1.md): اليوم 1، نحو 6,891 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/use-pro-207/context/day2.md): اليوم 2، نحو 6,375 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/use-pro-207/context/capstone.md): المشروع الختامي، نحو 1,880 من الوحدات النصية

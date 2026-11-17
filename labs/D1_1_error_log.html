@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 1.1 · سجل أخطاء في خمسة مخرجات · الذكاء الاصطناعي في أعمال المشروعات والمشتريات والعمليات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D1_1_error_log.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day1.html#lab-1-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 1.1</span>
+<h1>سجل أخطاء في خمسة مخرجات</h1>
+<p>دون أي مساعد: تراجع خمسة مخرجات صاغها «زِمام» (ملخص خطة، ومحضر اجتماع، وتقرير حالة، ومقارنة أسعار، وسجل مخاطر) على مصادرها، وتسجّل ثمانية على الأقل من أخطائها العشرة المزروعة، لكل خطأ نوعه ومصدره وموضعه.</p>
+<div class="meta"><span>50 دقيقة</span><span>اليوم 1</span><span>الجلسة 1: أين يخطئ المساعد في وثائق المشروع</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="1.1">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>سجل أخطاء فيه ثمانية على الأقل من الأخطاء العشرة المزروعة في خمسة مخرجات صاغها المساعد «زِمام».</li>
+    <li>لكل خطأ: العبارة، ونوع الخطأ، والمصدر الذي يحسمه، وموضعه في المصدر، والتصحيح.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/review/error_log.csv" download><b>review/error_log.csv</b><span>سجل الأخطاء الفارغ: عشرة صفوف وستة أعمدة.</span></a>
+  <a href="files/review/A1_plan_summary.txt" target="_blank"><b>review/A1_plan_summary.txt</b><span>المخرج A1: مقتطف من ملخص الخطة.</span></a>
+  <a href="files/review/A2_kickoff_minutes.txt" target="_blank"><b>review/A2_kickoff_minutes.txt</b><span>المخرج A2: محضر اجتماع الانطلاق.</span></a>
+  <a href="files/review/A3_status_report.txt" target="_blank"><b>review/A3_status_report.txt</b><span>المخرج A3: تقرير الحالة في يوم العمل 45.</span></a>
+  <a href="files/review/A4_price_comparison.csv" download><b>review/A4_price_comparison.csv</b><span>المخرج A4: مقارنة أسعار تأجير الرافعة والسقالات.</span></a>
+  <a href="files/review/A5_risk_log.csv" download><b>review/A5_risk_log.csv</b><span>المخرج A5: سجل المخاطر كما صاغه المساعد.</span></a>
+  <a href="files/charter.txt" target="_blank"><b>charter.txt</b><span>المصدر: ميثاق المشروع.</span></a>
+  <a href="files/meetings/m1_kickoff_ar.txt" target="_blank"><b>meetings/m1_kickoff_ar.txt</b><span>المصدر: تفريغ اجتماع الانطلاق.</span></a>
+  <a href="files/plan/tasks_status.csv" download><b>plan/tasks_status.csv</b><span>المصدر: بيانات حالة المهام.</span></a>
+  <a href="files/plan/status_rules.txt" target="_blank"><b>plan/status_rules.txt</b><span>المصدر: قواعد حساب الحالة.</span></a>
+  <a href="files/quotes/quote_1.txt" target="_blank"><b>quotes/quote_1.txt</b><span>المصدر: عرض السعر 1.</span></a>
+  <a href="files/quotes/quote_2.txt" target="_blank"><b>quotes/quote_2.txt</b><span>المصدر: عرض السعر 2.</span></a>
+  <a href="files/quotes/quote_3.txt" target="_blank"><b>quotes/quote_3.txt</b><span>المصدر: عرض السعر 3.</span></a>
+  <a href="files/meetings/risk_log.csv" download><b>meetings/risk_log.csv</b><span>المصدر: سجل المخاطر المعتمد مع الميثاق.</span></a>
+</div>
+<p class="small">سياسة الذكاء الاصطناعي: <b>دون أي مساعد</b>. هنا نقيس قراءتك أنت. برنامج الجداول مسموح للحساب. كل الملفات اصطناعية.</p>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · اقرأ ميثاق المشروع وافتح سجل الأخطاء الفارغ <span class="min">6 دقائق</span></h3>
+  <p>اقرأ من الميثاق ثلاثة بنود قبل أي مخرج: الفريق وملاك المخاطر (البند 3)، وتقويم المشروع (البند 4)، وحزم العمل وما تتوقف عليه (البند 5). ثم افتح <code>error_log.csv</code> في برنامج الجداول.</p>
+  <table>
+    <tr><th>نوع الخطأ</th><th>السؤال الذي يكشفه</th></tr>
+    <tr><td>مسؤول مختلَق</td><td>من قال إن هذا الشخص تولّى هذا البند، وأين؟</td></tr>
+    <tr><td>تاريخ مختلَق</td><td>في أي مصدر ورد هذا التاريخ؟</td></tr>
+    <tr><td>ترابط مفقود</td><td>على ماذا تتوقف هذه المهمة في الميثاق؟</td></tr>
+    <tr><td>حالة مبالغ فيها</td><td>ماذا تقول بيانات المهام والقواعد؟</td></tr>
+    <tr><td>مجموع خاطئ</td><td>هل يخرج الرقم إذا أعدت حسابه؟</td></tr>
+  </table>
+</div>
+
+<div class="step">
+  <h3>2 · راجع ملخص الخطة ومحضر الانطلاق على الميثاق والتفريغ <span class="min">12 دقيقة</span></h3>
+  <p>كل عبارة مرقمة في A1 تقابلها مهمة في البند 5 من الميثاق. وكل بند في A2 له موضع في تفريغ الاجتماع: ابحث عن اسم المسؤول وعن التاريخ في السطر نفسه، واكتب وقت السطر في عمود «الموضع في المصدر».</p>
+  <div class="callout warn"><b>العبارة الصحيحة لا تدخل السجل.</b> في كل مخرج عبارات سليمة. إن سجّلتها خطأً فقد أضعت وقت من يصححها بعدك.</div>
+</div>
+
+<div class="step">
+  <h3>3 · راجع تقرير الحالة على بيانات المهام وقواعد الحالة <span class="min">10 دقائق</span></h3>
+  <p>اقرأ القاعدة 2 أولًا: متى تُحتسب المهمة منجزة؟ ثم قابل كل عبارة في A3 بصف مهمتها في <code>tasks_status.csv</code>. لا تحسب المؤشر الآن: يكفي أن تبيّن بالقاعدة وبعدد المهام المقبولة أن الرقم المكتوب لا يمكن أن يخرج. الحساب الكامل في المختبر 1.2.</p>
+</div>
+
+<div class="step">
+  <h3>4 · أعد حساب مقارنة الأسعار من عروض الأسعار الثلاثة <span class="min">10 دقائق</span></h3>
+  <p>أعد حساب كل خانة في A4 من عروض الأسعار نفسها: الكمية في السعر، ثم المجموع، ثم الضريبة. اقرأ في كل عرض هل سعره شامل الضريبة أم لا.</p>
+  <table>
+    <tr><th>العرض</th><th>المجموع قبل الضريبة</th><th>الإجمالي شامل الضريبة</th></tr>
+    <tr><td>1</td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td>2</td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td>3</td><td class="fill"></td><td class="fill"></td></tr>
+  </table>
+</div>
+
+<div class="step">
+  <h3>5 · راجع سجل المخاطر ثم قارن سجلك مع زميل <span class="min">12 دقيقة</span></h3>
+  <p>اسأل كل صف في A5 ثلاثة أسئلة: هل مالكه من الفريق المسمّى في الميثاق؟ هل درجته حاصل ضرب الاحتمال في الأثر؟ هل تبريره يوافق ترابطات الميثاق؟ ثم بادل سجلك مع زميل: كل خطأ وجده أحدكما دون الآخر يُفتح مصدره أمامكما.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ مهمة إضافية</h3>
+  <p>اكتب لكل نوع من الأنواع الخمسة سؤالًا واحدًا تسأله لأي مسودة في عملك قبل أن تقبلها. ستعود إلى هذه الأسئلة في بطاقة إعادة التصميم.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>أي عرض سعر هو الأقل بعد إعادة الحساب، وكم إجماليه؟</li>
+  <li>من المسؤول عن جدول دخول المقاول إلى السطح بحسب تفريغ الاجتماع؟</li>
+  <li>كم مهمة وُقّع محضر قبولها في يوم العمل 45، وهل يتفق ذلك مع نسبة الإنجاز المكتوبة في A3؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>الحل: <code>labs/solutions/D1_1_error_log.md</code> والسجل المرجعي <code>labs/solutions/error_log.csv</code>. التحقق: <code>uv run labs/solutions/check.py 1.1</code>.</li>
+    <li>الأخطاء العشرة، اثنان من كل نوع: A1-3 وA1-5، وA2-4 وA2-5، وA3-1 وA3-3، وA4-1 وA4-5، وفي A5 الصفان R2 وR4.</li>
+    <li>عروض الأسعار بعد إعادة الحساب: 70,840 ثم 71,645 ثم 73,830 ريالًا. الأقل هو العرض 1، وجدول المساعد يسمّي العرض 3.</li>
+    <li>جدول دخول المقاول لم يتولَّه أحد: يُحسم في الاجتماع التالي. والمهام المقبولة أربع من أربع عشرة.</li>
+    <li>الفخ المعتاد: تسجيل A2-1 خطأً. القرار عُدّل في الاجتماع، والمحضر نقل الصيغة المعدَّلة الصحيحة.</li>
+    <li>النجاح من ثمانية أخطاء، ولكل خطأ مصدره وموضعه. من كتب «خطأ» بلا مصدر لا يُحسب له.</li>
+    <li>المخرجات الخمسة كتبها مساعد بديل مكتوب باليد، وأخطاؤها مزروعة عمدًا. لم يُشغَّل نموذج حقيقي في بناء المقرر.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><span></span><a href="D1_2_critical_path.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار الطلاقة في البيانات والذكاء الاصطناعي · الذكاء الاصطناعي في أعمال المشروعات والمشتريات والعمليات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع 4c7343d</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T19:44:21Z","version":"2027.1.0","commit":"4c7343d"},"course":{"id":"use-pro-207","code":"USE-PRO-207","title":"الذكاء الاصطناعي في أعمال المشروعات والمشتريات والعمليات","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-pro-207/","repo":"SDAIAAcademy/use-pro-207","home":"../index.html"},"lab":{"id":"1.1","title":"سجل أخطاء في خمسة مخرجات","summary":"دون أي مساعد: تراجع خمسة مخرجات صاغها «زِمام» (ملخص خطة، ومحضر اجتماع، وتقرير حالة، ومقارنة أسعار، وسجل مخاطر) على مصادرها، وتسجّل ثمانية على الأقل من أخطائها العشرة المزروعة، لكل خطأ نوعه ومصدره وموضعه.","minutes":50,"day":1,"unit":"اليوم 1","session":1,"deck":"../slides/day1.html#lab-1-1","prev":null,"next":"D1_2_critical_path.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>
