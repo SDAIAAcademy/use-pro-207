@@ -174,7 +174,7 @@ def lab_2_1() -> None:
     reg = rows(HERE / "action_register.csv")
     expect("entries in the reference register", len(reg), k["entries"])
     expect("entries whose time is not in their transcript", [r[0] for r in reg if r[6] not in tr[r[1]]], [])
-    en = {"جليلة الخثعمي": "Jalila", "فاضل الرومي": "Fadel", "حاتم الدوسري": "Hatim"}
+    en = {"جليلة الخثعمي": "Jalila", "فاضل الرومي": "Fadel", "شاهر الدوسري": "Shaher"}
     missing = []
     for r in reg:
         if r[4] == "لم يُسند":
